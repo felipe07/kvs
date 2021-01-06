@@ -4,11 +4,13 @@
 use std::collections::HashMap;
 
 /// Contains a HashMap that serves as the store for the key-value library
+#[derive(Default)]
 pub struct KvStore {
     store: HashMap<String, String>
 }
 
 impl KvStore {
+// impl Default for KvStore {
     /// This method allows the creation of an in-memory key-value store
     /// ```
     /// use kvs::KvStore;
